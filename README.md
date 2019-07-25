@@ -8,10 +8,6 @@ Check if a number is a valid Australian Company Number (ACN)
 * Import by adding `import isValidACN from 'is-valid-acn'`.
 * Use it by writing `const valid = isValidACN('010499966')`
 
-## Accepted formats
-* Strings with one or multiple class names: `a`, `a b`
-* Array of strings with one or multiple class names: `['a', 'b']`, `['a b', 'c d']`.
-
 ## Examples
 
 ```js
