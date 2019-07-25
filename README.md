@@ -16,6 +16,9 @@ Check if a number is a valid Australian Company Number (ACN)
 
 > isValidACN('010 499 966');
 < true
+
+> isValidACN('010-499-966');
+< true
 ```
 
 ## License
