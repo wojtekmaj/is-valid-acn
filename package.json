@@ -1,6 +1,6 @@
 {
   "name": "is-valid-acn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if a number is a valid Australian Company Number (ACN)",
   "main": "dist/index.js",
   "source": "src/index.js",
