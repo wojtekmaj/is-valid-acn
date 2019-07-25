@@ -7,6 +7,18 @@ describe('isValidACN', () => {
     expect(result).toBe(false);
   });
 
+  it('returns false for non-numeric input', () => {
+    const result = isValidACN('elephants');
+
+    expect(result).toBe(false);
+  });
+
+  it('returns false for partially numeric input', () => {
+    const result = isValidACN('010499966fox');
+
+    expect(result).toBe(false);
+  });
+
   it('returns false for invalid input with invalid length', () => {
     const result = isValidACN('123');
 
@@ -27,6 +39,12 @@ describe('isValidACN', () => {
 
   it('returns true for valid input with spaces', () => {
     const result = isValidACN('010 499 966');
+
+    expect(result).toBe(true);
+  });
+
+  it('returns true for valid input with dashes', () => {
+    const result = isValidACN('010-499-966');
 
     expect(result).toBe(true);
   });

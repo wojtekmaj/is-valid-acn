@@ -5,8 +5,8 @@ export default function isValidACN(rawAcn) {
     return false;
   }
 
-  // strip anything other than digits
-  const acn = rawAcn.toString().replace(/[^0-9]/g, '');
+  // strip non-alphanumeric characters
+  const acn = rawAcn.toString().replace(/[^a-zA-Z\d]/gi, '');
 
   // check length is 9 digits
   if (acn.length === 9) {
