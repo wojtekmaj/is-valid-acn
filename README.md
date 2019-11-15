@@ -8,6 +8,10 @@ Check if a number is a valid Australian Company Number (ACN).
 * Import by adding `import isValidACN from 'is-valid-acn'`.
 * Use it by writing `const valid = isValidACN('010499966')`
 
+## See also
+
+* [is-valid-abn](https://github.com/DemystData/is-valid-abn): Check if a number is a valid Australian Business Number (ABN).
+
 ## Examples
 
 ```js
