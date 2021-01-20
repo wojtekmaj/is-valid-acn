@@ -19,6 +19,12 @@ describe('isValidACN', () => {
     expect(result).toBe(false);
   });
 
+  it('returns false for partially numeric input', () => {
+    const result = isValidACN('010499966FOX');
+
+    expect(result).toBe(false);
+  });
+
   it('returns false for invalid input with invalid length', () => {
     const result = isValidACN('123');
 
