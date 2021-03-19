@@ -36,6 +36,7 @@ describe('isValidACN', () => {
 
     expect(result).toBe(false);
   });
+
   it('returns true for valid numeric input', () => {
     const result = isValidACN(143526096);
 
