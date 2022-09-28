@@ -2,6 +2,7 @@ import isValidACN from './index';
 
 describe('isValidACN', () => {
   it('returns false for no input', () => {
+    // @ts-expect-error-next-line
     const result = isValidACN();
 
     expect(result).toBe(false);

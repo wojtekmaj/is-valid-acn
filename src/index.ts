@@ -1,6 +1,6 @@
 const weights = [8, 7, 6, 5, 4, 3, 2, 1];
 
-export default function isValidACN(rawAcn) {
+export default function isValidACN(rawAcn: string | number): boolean {
   if (!rawAcn) {
     return false;
   }
