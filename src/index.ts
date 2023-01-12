@@ -15,13 +15,12 @@ export default function isValidACN(rawAcn: string | number): boolean {
 
   // apply ato check method
   let sum = 0;
-  for (let position = 0; position < weights.length; position += 1) {
-    const weight = weights[position];
-    const digit = parseInt(acn[position], 10);
+  weights.forEach((weight, position) => {
+    const digit = Number(acn[position]);
     sum += weight * digit;
-  }
+  });
 
   const checksum = (10 - (sum % 10)) % 10;
 
-  return checksum === parseInt(acn[8], 10);
+  return checksum == Number(acn[8]);
 }
