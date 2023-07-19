@@ -16,15 +16,12 @@ Check if a number is a valid Australian Company Number (ACN).
 
 ## Examples
 
-```js
-> isValidACN('010499966');
-< true
+```ts
+isValidACN('010499966'); // true
 
-> isValidACN('010 499 966');
-< true
+isValidACN('010 499 966'); // true
 
-> isValidACN('010-499-966');
-< true
+isValidACN('010-499-966'); // true
 ```
 
 ## License
