@@ -22,5 +22,5 @@ export default function isValidACN(rawAcn: string | number): boolean {
 
   const checksum = (10 - (sum % 10)) % 10;
 
-  return checksum == Number(acn[8]);
+  return checksum === Number(acn[8]);
 }
