@@ -1,6 +1,6 @@
 {
   "name": "is-valid-acn",
-  "version": "1.3.4",
+  "version": "2.0.0",
   "description": "Check if a number is a valid Australian Company Number (ACN)",
   "type": "module",
   "sideEffects": false,
